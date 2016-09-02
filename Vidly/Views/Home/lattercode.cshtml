@@ -1,0 +1,201 @@
+﻿
+@{
+    ViewBag.Title = "lattercode";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>lattercode</h2>
+
+
+
+
+<div class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Sobre nosotros", "About", "Home")</li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("Oftalmologia ", "vista", "controllador")</li>
+                        <li role="separator" class="divider"></li>
+                        <li>@Html.ActionLink("cirugías de cataratas", "vista", "controllador")</li>
+                        <li role="separator" class="divider"></li>
+                        <li>@Html.ActionLink("Oftalmologia general", "vista", "controllador")</li>
+                        <li role="separator" class="divider"></li>
+                        <li>@Html.ActionLink("Oftalmologia Pediatrica", "vista", "controllador")</li>
+                        <li role="separator" class="divider"></li>
+                        <li>@Html.ActionLink("Oculoplastia", "vista", "controllador")</li>
+                        <li role="separator" class="divider"></li>
+                        <li>@Html.ActionLink("cornea", "vista", "controllador")</li>
+                        <li role="separator" class="divider"></li>
+                        <li>@Html.ActionLink("Retina", "vista", "controllador")</li>
+                        <li role="separator" class="divider"></li>
+                        <li>@Html.ActionLink("Glaucoma", "vista", "controllador")</li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Diabetologia<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("nutrición", "vista", "controllador")</li>
+                        <li role="separator" class="divider"></li>
+                        <li>@Html.ActionLink("control metabolico", "vista", "controllador")</li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Odontologia<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("Prevención", "vista", "controllador")</li>
+                        <li role="separator" class="divider"></li>
+                        <li>@Html.ActionLink("Rehabilitación oral y estetica", "vista", "controllador")</li>
+                    </ul>
+                </li>
+
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="divider"></div>
+
+<section class="bg-3">
+    <div class="col-sm-6 col-sm-offset-3 text-center"><h2>Clients & Partners</h2></div>
+</section>
+
+<div class="divider" id="section3"></div>
+
+<div class="bg-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-xs-6">
+
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/444/F8F8F8" class="img-responsive"></a></div>
+                    <div class="panel-body">
+                        <p>Renovations</p>
+                        <p></p>
+
+                    </div>
+                </div><!--/panel-->
+            </div><!--/col-->
+
+            <div class="col-sm-4 col-xs-6">
+
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/454545/FFF" class="img-responsive"></a></div>
+                    <div class="panel-body">
+                        <p>Projects</p>
+                        <p></p>
+
+                    </div>
+                </div><!--/panel-->
+            </div><!--/col-->
+
+            <div class="col-sm-4 col-xs-6">
+
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail"><a href="#" title="Interiors"><img src="//placehold.it/600x400/555/F2F2F2" class="img-responsive"></a></div>
+                    <div class="panel-body">
+                        <p>Interiors</p>
+                        <p></p>
+
+                    </div>
+                </div><!--/panel-->
+
+            </div><!--/col-->
+
+            <div class="col-sm-4 col-xs-6">
+
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/555/FFF" class="img-responsive"></a></div>
+                    <div class="panel-body">
+                        <p>Design</p>
+                        <p></p>
+
+                    </div>
+                </div><!--/panel-->
+
+            </div><!--/col-->
+
+            <div class="col-sm-4 col-xs-6">
+
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/555/EEE" class="img-responsive"></a></div>
+                    <div class="panel-body">
+                        <p>Site Planning</p>
+                        <p></p>
+
+                    </div>
+                </div><!--/panel-->
+
+            </div><!--/col-->
+
+            <div class="col-sm-4 col-xs-6">
+
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/666/F4F4F4" class="img-responsive"></a></div>
+                    <div class="panel-body">
+                        <p>More</p>
+                        <p></p>
+
+                    </div>
+                </div><!--/panel-->
+
+            </div><!--/col-->
+
+        </div><!--/row-->
+    </div><!--/container-->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="col-sm-10 col-sm-offset-1">
+        <div class="page-header text-center">
+            <h1>Home</h1>
+        </div>
+
+        <p class="lead text-center">
+            klads kajsdbac ;jbasdou . a;dsofn  ;josdabn
+        </p>
+
+        <hr>
+
+        <div class="divider"></div>
+
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<section class="bg-1">
+    <div class="col-sm-6 col-sm-offset-3 text-center"></div>
+</section>
+
+<div class="divider" id="section2"></div>
